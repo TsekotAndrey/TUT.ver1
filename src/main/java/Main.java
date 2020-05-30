@@ -15,7 +15,7 @@ public class Main {
         chromeDriver.findElement(By.xpath("//input[@id='advancedsearchmainfield']")).sendKeys("QA");
         chromeDriver.findElement(By.xpath("//input[@id='advancedsearchmainfield']")).sendKeys(Keys.RETURN);
         List<WebElement> vacancy = chromeDriver.findElements(By.xpath("//div[@class='vacancy-serp']"));
-        //Косячный xPath на 17 строчке
+        //Косячный xPath на 17 строчке)))))))))
         if (vacancy.size() > 1) System.out.println("It is good day");
         else System.out.println("It is not good day");
         chromeDriver.close();
