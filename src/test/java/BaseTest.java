@@ -1,11 +1,15 @@
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import java.util.List;
 
-public class Main {
-    public static void main(String[] args) {
+public class BaseTest {
+
+    @Test
+    public void searchFunctionality() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lenovo\\IdeaProjects\\untitled\\src\\main\\resources\\drivers\\chromedriver_win32\\chromedriver.exe");
         ChromeDriver chromeDriver = new ChromeDriver();
         chromeDriver.manage().window().maximize();
