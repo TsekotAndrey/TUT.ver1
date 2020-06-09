@@ -9,7 +9,7 @@ import java.util.List;
 public class BaseTest {
 
     @Test
-    public void method1() {
+    public void searchFunctionality() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lenovo\\IdeaProjects\\untitled\\src\\main\\resources\\drivers\\chromedriver_win32\\chromedriver.exe");
         ChromeDriver chromeDriver = new ChromeDriver();
         chromeDriver.manage().window().maximize();
